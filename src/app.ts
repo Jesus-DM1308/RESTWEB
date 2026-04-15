@@ -6,8 +6,8 @@ import { Server } from './presentation/server.ts';
 
 function main() {
     const server  = new Server({
-        port: envs.PORT,
-        public_path: envs.PUBLIC_PATH
+        PORT: envs.PORT,
+        PUBLIC_PATH: envs.PUBLIC_PATH
     });
     server.start();
 }
